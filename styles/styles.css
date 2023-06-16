@@ -78,6 +78,12 @@ body {
     overflow: auto;
     z-index: 99998;
 }
+@media only screen and (max-width :768px){
+    /*mobile phones */
+    .div2 {
+        float: center;
+    }
+}
 
 .profilePic{
     height:300px;
@@ -113,6 +119,8 @@ a:link {
     z-index: 99998;
     overflow: auto;
 }
+
+
 .post-thumb {
     /*padding-left: 20px;*/
     float: left;
@@ -134,6 +142,7 @@ a:link {
     .post-thumb img {
         width: 175px;
         height: 175px;
+        border-radius: 50px 90px 50px 90px;
     }
 }
 .post-content {
@@ -154,6 +163,12 @@ a:link {
     float: left;
     padding-right:20px;
 }
+@media only screen and (max-width :768px){
+    /*mobile phones */
+    .rmp-thumb {
+        text-align: center;
+    }
+}
 .rmp-thumb img{
     
     display: block;
@@ -168,7 +183,7 @@ a:link {
 @media only screen and (max-width :768px){
     /*mobile phones */
     .rmp-thumb img {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
 }
@@ -180,8 +195,15 @@ a:link {
     inline-size: 50%;
     overflow-wrap: break-word;
 }
+@media only screen and (max-width :768px){
+    /*mobile phones */
+    .rmp-content {
+        text-align: center;
+        inline-size: 100%;
+    }
+}
 .rmp-desc{
-    line-height: 2 ;
+    line-height: 3 ;
 }
 .crypt-thumb {
     float: left;
@@ -201,7 +223,7 @@ a:link {
 @media only screen and (max-width :768px){
     /*mobile phones */
     .crypt-thumb img {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
 }

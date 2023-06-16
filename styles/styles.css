@@ -2,13 +2,9 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    
-    /*background: radial-gradient( #280131, #200645); */
     background: radial-gradient( #200645, #0b0131);
     background-attachment: fixed; /*edit*/
     font-family: 'Century Gothic', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    
-
 }
 .big_container{
     position: relative;
@@ -132,6 +128,13 @@ a:link {
     border-width: thick;
     border-color: #3A2A5A;
     
+}
+@media only screen and (max-width :768px){
+    /*mobile phones */
+    .post-thumb img {
+        width: 100px;
+        height: 100px;
+    }
 }
 .post-content {
     vertical-align: middle;

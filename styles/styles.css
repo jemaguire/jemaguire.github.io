@@ -81,7 +81,7 @@ body {
 @media only screen and (max-width :768px){
     /*mobile phones */
     .div2 {
-        float: center;
+        display: inline-block;
     }
 }
 
@@ -97,6 +97,7 @@ body {
     overflow: auto;
     display: inline;
 }
+
 /* Link stuff */
 /* unvisited link */
 a:link {
@@ -126,6 +127,12 @@ a:link {
     float: left;
     padding-right:20px;
 }
+@media only screen and (max-width :768px){
+    /*mobile phones */
+    .post-thumb{
+        float: none;
+    }
+}
 .post-thumb img {
     /*float: left;*/
     display: block;
@@ -140,9 +147,11 @@ a:link {
 @media only screen and (max-width :768px){
     /*mobile phones */
     .post-thumb img {
-        width: 175px;
-        height: 175px;
+        width: 50%;
+        height: auto;
         border-radius: 50px 90px 50px 90px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .post-content {
@@ -151,6 +160,14 @@ a:link {
     color: #e0d5f0;
     padding-top: 5%;
     
+}
+@media only screen and (max-width :768px){
+    /*mobile phones */
+    .post-content {
+        display: block;
+        text-align: center;
+
+    }
 }
 .post-title {
     margin-bottom: 10%;
@@ -183,17 +200,19 @@ a:link {
 @media only screen and (max-width :768px){
     /*mobile phones */
     .rmp-thumb img {
-        width: 300px;
+        width: 100%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .rmp-content{
-    display: flex;
+    /*display: flex;*/
     text-align: left;
     color: #e0d5f0;
-    /*float: right;*/
+    /*float: right;
     inline-size: 50%;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;*/
 }
 @media only screen and (max-width :768px){
     /*mobile phones */
@@ -223,8 +242,10 @@ a:link {
 @media only screen and (max-width :768px){
     /*mobile phones */
     .crypt-thumb img {
-        width: 300px;
+        width: 100%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
